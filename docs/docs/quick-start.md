@@ -2,7 +2,7 @@
 title: Quick Start
 ---
 
-This quick start is intended for intermediate to advanced developers. For a gentler intro to Gatsby, [head to our tutorial](/tutorial/)!
+प्रारंभ is intended for intermediate to advanced developers. For a gentler intro to Gatsby, [head to our tutorial](/tutorial/)!
 
 ## Use the Gatsby CLI
 
