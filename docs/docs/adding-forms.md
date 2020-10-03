@@ -2,9 +2,9 @@
 title: Adding Forms
 ---
 
-Gatsby is built on top of React. So anything that is possible with a React form is possible in Gatsby. Additional details about how to create React forms can be found in the [React forms documentation](https://reactjs.org/docs/forms.html) (which happens to be built with Gatsby!)
+गॅटस्बी रिऍक्ट वर बिल्ड केलेले असल्यामुळे जे काही रिऍक्ट वर शक्य आहे ते सर्व गॅटस्बी वर देखील शक्य आहे .रिऍक्ट फॉर्म कसे तयार करावे याबद्दल अतिरिक्त तपशील या मध्ये पाहता येईल [React forms documentation](https://reactjs.org/docs/forms.html) (जे गॅटस्बीसह बिल्ड केले जाते)
 
-Start with the following page.
+खालील पेज-पासून सुरुवात करा.
 
 ```jsx:title=src/pages/index.js
 import React from "react"
@@ -12,7 +12,7 @@ import React from "react"
 export default () => <div>Hello world!</div>
 ```
 
-This Gatsby page is a React component. When you want to create a form, you need to store the state of the form - what the user has entered. Convert your function (stateless) component to a class (stateful) component.
+हे गॅटस्बी पेज एक रिऍक्टचे घटक असून जेव्हा तुम्हाला एक फॉर्म तयार करायचा असेल, तेव्हा वापरकर्त्याने काय एंटर केले आहे ते आपल्याला फॉर्मची स्थिती स्टोर करावी लागेल. आपले कार्य (stateless) घटक वर्ग (stateful) घटकात रूपांतरीत करा
 
 ```jsx:title=src/pages/index.js
 import React from "react"
@@ -24,7 +24,7 @@ export default class IndexPage extends React.Component {
 }
 ```
 
-Now that you have created a class component, you can add `state` to the component.
+आता जेव्हा आपण क्लास कॉम्पोनन्ट तयार केला आहे तर आपण कॉम्पोनन्ट मध्ये `state` ऍड करू  शकतो.
 
 ```jsx:title=src/pages/index.js
 import React from "react"
@@ -41,7 +41,7 @@ export default class IndexPage extends React.Component {
 }
 ```
 
-And now you can add a few input fields:
+आणि आता तुम्ही काही इनपुट फील्ड जोडू शकता.
 
 ```jsx:title=src/pages/index.js
 import React from "react"
@@ -70,7 +70,7 @@ export default class IndexPage extends React.Component {
 }
 ```
 
-When a user types into an input box, the state should update. Add an `onChange` prop to update state and add a `value` prop to keep the input up to date with the new state:
+जेव्हा वापरकर्ता इनपुट बॉक्समध्ये टाईप करतो, तेव्हा state अपडेट व्हायला हवे. स्थिती अपडेट करण्यासाठी `onChange` प्रॉप जोडा आणि नवीन स्थितीसह इनपुट उपडेट ठेवण्यासाठी `value` प्रॉप जोडा:
 
 ```jsx:title=src/pages/index.js
 import React from "react"
@@ -119,7 +119,7 @@ export default class IndexPage extends React.Component {
 }
 ```
 
-Now that your inputs are working, you want something to happen when you submit the form. Add `onSubmit` props to the form element and add `handleSubmit` to show an alert when the user submits the form:
+आता जेव्हा तुमचे इनपुट कार्यरत आहेत, फॉर्म सादर करताना काहीतरी घडावं अशी तुमची इच्छा असल्यास फॉर्म घटकात `onSubmit` प्रॉप्स जोडा आणि वापरकर्ता फॉर्म सादर करताना अलर्ट दर्शवण्यासाठी `handleSubmit` जोडा: 
 
 ```jsx:title=src/pages/index.js
 import React from "react"
@@ -173,6 +173,6 @@ export default class IndexPage extends React.Component {
 }
 ```
 
-This form isn't doing anything besides showing the user information that they just entered. At this point, you may want to move this form to a component, send the form state to a backend server, or add robust validation. You can also use fantastic React form libraries like [Formik](https://github.com/jaredpalmer/formik) or [Final Form](https://github.com/final-form/react-final-form) to speed up your development process.
+हा फॉर्म वापरकर्त्याची माहिती दाखवण्याव्यतिरिक्त काही अतिरिक्त करत नाही. या वेळी, आपण हा फॉर्म एका कॉम्पोनन्ट कडे हलवू शकता, फॉर्म स्टेट बॅकएंड सर्वरवर पाठवा, किंवा रोबस्त मान्यता जोडा. तुम्ही अप्रतिम रिऍक्ट देखील वापरू शकता, जसे लायब्ररी [Formik](https://github.com/jaredpalmer/formik) किंवा [Final Form](https://github.com/final-form/react-final-form) आपल्या विकास प्रक्रियेला गती देण्यासाठी वापरू शकता.
 
-All of this is possible and more by leveraging the power of Gatsby and the React ecosystem!
+गॅटस्बीची पॉवर लेव्हरेज करत आहे आणि रिऍक्ट इकोसिस्टिम मुळे हे सर्व शक्य आहे.
