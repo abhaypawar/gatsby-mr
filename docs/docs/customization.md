@@ -3,6 +3,6 @@ title: Custom Configuration
 overview: true
 ---
 
-Sometimes you may find yourself in a situation where Gatsby's default configuration just isn't quite what you need for your site. If you should find yourself in this situation, have no fear my friend, you can customize Gatsby's config for `babel` and `webpack`. You can also customize `html.js`, the React component used to generate the initial HTML file of your build. You'll also find guides on how to get custom environment variables into your website, as well how to proxy API requests in development so your API calls aren't interpreted by your server as static assets.
+असेही कधी होऊ शकते की जिथे आपल्या साईटची  गरज हि गॅट्सबी च्या डिफॉल्ट कॉन्फीगुरेशन पेक्षा वेगळी असेल.अश्या परिस्थितीत काळजी नसावी कारण आपण गॅट्सबी `babel`आणि `webpack`कस्टमाइझ करू शकता. तुम्ही `html.js` एडिट देखील करू शकता, जे तुमच्या बिल्डची प्रारंभिक HTML फाइल तयार करण्यासाठी वापरला जाणारा रिऍक्ट कॉम्पोनन्ट आहे. आपल्या वेबसाइटवर कस्टम एन्व्हायर्नमेंट व्हेरिएबल कसे मिळवावे, तसेच डेव्हलपमेंट API विनंत्या कशा प्रॉक्सी करायच्या याचे मार्गदर्शकही तुम्हाला सापडतील जेणेकरून तुमच्या सर्व्हरकडून स्थिर मालमत्ता म्हणून तुमच्या API कॉल्सचा अर्थ लावला जाणार नाही.
 
 <GuideList slug={props.slug} />
