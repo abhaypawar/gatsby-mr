@@ -2,19 +2,20 @@
 title: Babel
 ---
 
-Gatsby uses the phenomenal project [Babel](https://babeljs.io/) to enable support for writing modern JavaScript — while still supporting older browsers.
 
-## How to specify which browsers to support
+जुन्या ब्राऊजरला समर्थन देत असताना- गॅटस्बी [babel](https://babeljs.io/) आधुनिक जावास्क्रिप्ट लिहिण्यास समर्थन देण्यासाठी वापरतो 
 
-Gatsby supports by default the last two versions of major browsers, IE 9+, as well as any browser that still has 1%+ browser share.
+## कोणत्या ब्राउझरचे समर्थन करावे हे निर्दिष्ट कसे कराल 
 
-This means that your JavaScript is automatically compiled to ensure it works on older browsers. Polyfills are also automatically added — no more shipping code which mysteriously breaks on older browsers!
+गॅटस्बी मुख्य ब्राउझरच्या शेवटच्या दोन आवृत्त्यांना डीफॉल्टनुसार समर्थन देते, IE 9+, तसेच कोणताही ब्राउझर ज्यात अद्याप 1% + ब्राउझर सामायिक आहे.
 
-If you only target newer browsers, see the [Browser Support](/docs/browser-support/) docs page for how to instruct Gatsby on which browsers you support and then Babel will start compiling for only these browsers.
+याचा अर्थ असा आहे की आपली Javascript जुन्या ब्राउझरवर कार्य करते हे सुनिश्चित करण्यासाठी स्वयंचलितपणे संकलित केली आहे. पॉलीफिल देखील स्वयंचलितपणे जोडली जातात - जुन्या ब्राउझरवर रहस्यमयपणे खंडित करणारा कोणताही शिपिंग कोड नाही!
 
-## How to use a custom .babelrc file
+आपण केवळ नवीन ब्राउझरवर लक्ष केंद्रित केले असल्यास, कोणत्या ब्राउझरवर समर्थित आहात यावर गॅटस्बीला कसे शिकवायचे यासाठी [Browser Support](/docs/browser-support/) दस्तऐवज पेज पहा आणि नंतर बाबेल केवळ या ब्राउझरसाठी कंपाईल करणे प्रारंभ करेल.
 
-Gatsby ships with a default .babelrc setup that should work for most sites. If you'd like to add custom Babel presets or plugins, you can create your own `.babelrc` at the root of your site, import [`babel-preset-gatsby`](https://github.com/gatsbyjs/gatsby/tree/master/packages/babel-preset-gatsby), and add additional plugins, presets, and pass options to `babel-preset-gatsby`, e.g. `targets`.
+## कस्टम babelrc फाईल कशी वापरावी
+
+डिफॉल्ट .babelrc सेटअप फाईल बरोबर येते आणि ते बहुतेक साइट्ससाठी कार्य करतात. आपण कस्टम बाबेल प्रीसेट किंवा प्लगइन जोडू इच्छित असल्यास, आपण आपल्या साइटच्या रूट्स आपले स्वतःचे `.babrcrc` तयार करू शकता. इम्पोर्ट करा [`babel-preset-gatsby`](https://github.com/gatsbyjs/gatsby/tree/master/packages/babel-preset-gatsby),आणि अतिरिक्त प्लगइन जोडा, प्रीसेट आणि options बेबल- वर पर्याय पास करा `babel-preset-gatsby`, उदा. `targets`.
 
 ```shell
 npm install --save-dev babel-preset-gatsby
@@ -38,4 +39,4 @@ npm install --save-dev babel-preset-gatsby
 ```
 <!-- prettier-ignore-end -->
 
-For more advanced configurations, you can also copy the defaults from [`babel-preset-gatsby`](https://github.com/gatsbyjs/gatsby/tree/master/packages/babel-preset-gatsby) and customize them to suit your needs.
+अधिक प्रगत कॉन्फिगरेशनसाठी, आपण डीफॉल्टची कॉपी देखील येथे तयार करु शकता  [`babel-preset-gatsby`](https://github.com/gatsbyjs/gatsby/tree/master/packages/babel-preset-gatsby)आणि आपल्या गरजा भागवण्यासाठी त्यांना कस्टमाइझ करू शकता.
